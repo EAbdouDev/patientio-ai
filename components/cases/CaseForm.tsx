@@ -84,7 +84,11 @@ const CaseForm: FC<CaseFormProps> = ({ userEmail }) => {
   return (
     <div className="w-full h-full px-6 py-4 mt-4">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          //@ts-expect-error
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8"
+        >
           <div className="space-y-8">
             <div className="flex justify-between items-center gap-x-6 flex-wrap gap-y-8">
               <FormField
