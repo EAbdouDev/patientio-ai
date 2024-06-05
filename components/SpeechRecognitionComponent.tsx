@@ -278,7 +278,7 @@ const SpeechRecognitionComponent = () => {
       gender === "male" ? "JXWoTxxRdFLrympQ3Au5" : "1MD5F8kHIDMZ9LviKfZx";
 
     // Set options for the API request.
-    const options = {
+    const options: any = {
       method: "POST",
       url: `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
       headers: {
